@@ -11,13 +11,13 @@
                 <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="50" height="50">
             </span>
             <span v-else class="text-5xl">
-                <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="50" height="50">
+                <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="close" width="50" height="50">
             </span>
          </button>
         </div>
           <!-- navbar link -->
         <nav 
-        :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md-justify-between md:flex-row',
+        :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#1e3a5d] md:relative md:bg-transparent md:flex md-justify-between md:flex-row',
             isMenuOpen ? 'bock':'hidden'
         ]"
         >
@@ -48,7 +48,7 @@
  const isMenuOpen = ref(false);
  const scrollToSection = (href) => {
     isMenuOpen.value=false;
-    const selection = document.querySelector(href);
+    const section = document.querySelector(href);
     if(section){
         section.scrollIntoView({behavior : 'smooth'});
     }
